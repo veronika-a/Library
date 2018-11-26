@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Library.Library">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Reader" Type="Library.Reader" FixedFromPoint="true">
+      <Path>
+        <Point X="5" Y="1.359" />
+        <Point X="5.75" Y="1.359" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAgAAgAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Library.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+      <Property Name="Reader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Library.Author">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="Book" Type="Library.Book">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.343" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAEAAAAgAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Author.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Library.Hire">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <AssociationLine Name="Book" Type="Library.Book" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.719" Y="4" />
+        <Point X="4.719" Y="2.75" />
+        <Point X="2.75" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Hire.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Library.Reader">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgEAAEAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Hire" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Library.Book">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Author" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
